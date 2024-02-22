@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>CSS Font-size</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header" >
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">CSS FONT-SIZE</a>
+                <ul class="nav">
+                    <li ><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                    
+            </div>
+            <div class="col-10" id="row2">
+            <div class="row" >
+                <div class="col-12" id="banner">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9" id="content">
+                    <h1>Thuộc tính font-size</h1>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <p class="html">HTML</p>
+                        </div>
+                        <div class="col-1" style="padding-left: 25px;">
+                            <p class="css">CSS</p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Heading 2 bắt đầu từ đây! -->
+                    <p>Chúng ta sử dụng thuộc tính font-size để thiết lập cỡ chữ.</p>
+
+
+            <h2>Thiết lập cỡ chữ với pixel (điểm ảnh)</h2>
+            <p>Ví dụ:</p>
+<pre><code>
+&lt;p style="font-size: 17px;">"Dòng chữ này có cỡ chữ 17 pixel."&lt;/p>
+</code>
+</pre>
+            <p>Kết quả:</p>
+            <pre>
+                <p style="font-size: 17px;">"Dòng chữ này có cỡ chữ 17 pixel."</p></pre>
+
+
+            <h2>Thiết lập cỡ chữ với phần trăm và em</h2>
+            <p>Phần trăm và em là hai kiểu đo lường có tính phụ thuộc. Cụ thể, chúng phụ thuộc vào cỡ chữ của thành phần cha.</p>
+
+            <p>Ví dụ, thành phần h1 có thành phần cha là body. Nếu chung ta thiết lập cỡ chữ của body là 16px, thì vậy h1 sẽ có cỡ chữ bằng 150% của body, tức là 24px:</p>
+            <pre><code>
+&lt;h1 style="font-size: 150%">"Đây là Heading 1 có cỡ chữ 24px"&lt;/h1>
+            </code></pre>
+            <p>Kết quả:</p>
+            <h1 style="font-size: 24px;">"Đây là Heading 1 có cỡ chữ 24px"</h1>
+
+            <p>Nếu cỡ chữ ở thành phần cha (body) chưa được thiết lập, h1 sẽ phụ thuộc vào cỡ chữ mặc định của trình duyệt.</p>
+            <p>Tương tự như vậy với em:
+            </p>
+            <pre><code>
+&lt;h1 style="font-size: 1.5em">"Đây là Heading 1 có cỡ chữ bằng 1.5 lần cỡ chữ của body!"&lt;/h1></code>
+    </pre>
+                            <p>Kết quả:</p>
+                            <h1 style="font-size: 1.5em;">"Đây là Heading 1 có cỡ chữ bằng 1.5 lần cỡ chữ của body!"</h1><br><br><br><br>
+
+
+        <div class="row">
+            <div class="col-12">
+                <!-- <a href="" class="truocsau">Trước</a>
+                <a href="" class="truocsau" id="sau">Sau</a> -->
+            </div>
+        </div>
+                </div>
+                <div class="col-3" id="dexuat">
+                    <u>Bài viết liên quan</u>
+                    <div>
+                        <a href="htmltext.html">
+                            <img src="./img/Card HTML Text.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="CSS Font-family.html">
+                            <img src="./img/Card CSS Font Family.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="CSS Font-weight.html">
+                            <img src="./img/Card CSS Font Weight.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>HTML Block - Inline</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header" >
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">HTML BLOCK - INLINE</a>
+                <ul class="nav">
+                    <li ><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                    
+            </div>
+            <div class="col-10" id="row2">
+            <div class="row" >
+                <div class="col-12" id="banner">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9" id="content">
+                    <h1>Tìm hiểu về HTML: Thành phần khối và thành phần nội dòng</h1>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <p class="html">HTML</p>
+                        </div>
+                        <div class="col-1" style="padding-left: 25px;">
+                            <p class="css">CSS</p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Heading 2 bắt đầu từ đây! -->
+                    
+                        <!-- <p class="html">HTML</p>
+                        <p class="css">CSS</p> -->
+                        <p>Trong một văn bản HTML sẽ bao gồm các thành phần khối và nội dòng chứa và hiện thị nội dung của trang.</p>
+                        <h2>Thành phần khối</h2>
+                        <p>
+                            Thành phần khối là thành phần bắt đầu trên một dòng mới và có chiều ngang mặc định chiếm toàn bộ độ rộng của trình duyệt.
+                        </p>
+                        <p>
+                            Một trong những thành phần khối thường gặp nhất là div. Div là thành phần sử dụng để thiết lập một vùng chứa nội dung. Bạn hãy tưởng tượng div như một chiếc hộp có thể co giãn được chiều dọc để chứa các nội dung bên trong.
+                        </p>
+                        <p>Ví dụ:</p>
+                        <pre><code>
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;body>
+        Đây là một trang được viết bằng HTML.
+        &lt;div style="background-color: aqua;">
+            Dòng chữ này được đặt trong thẻ div.
+        &lt;/div>
+    &lt;/body>
+&lt;/html>
+                        </code></pre>
+                        <p>Chúng ta sẽ có kết quả hiển thị trên trình duyệt như sau:</p>
+                        <img style="width: 800px" src="./img/BlockInline/Vidu1.png">
+                        <p>Thành phần <code>div</code> sẽ giãn ra để chứa các nội dung. Chúng ta có thể sử dụng <code>div</code> để chia trang thành các phần nội dung có liên quan.</p>
+                        <!-- Ví dụ -->
+            
+                        <p>Hãy thử nó với máy tính của bạn để hiểu rõ hơn nhé!</p>
+                        <h2>Thành phần nội dòng</h2>
+                        <p>Thành phần nội dòng không bắt đầu từ một dòng mới và có độ lớn vừa đủ bằng nội dung mà nó chứa.</p>
+                        <p>Lưu ý rằng các thành phần nội dòng không thể chứa thành phần khối.</p>
+                        <p>Ví dụ:</p>
+                        <pre><code>
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;body>
+        Đây là một trang được viết bằng &lt;em>HTML&lt;/em>.
+    &lt;/body>
+&lt;/html>
+                        </code></pre>
+                        <p>Chúng ta sẽ có kết quả như sau:</p>
+                        <img src="img/BlockInline/Vidu2.png">
+                        <p> Thành phần nội dòng <code>em</code> đã định dạng nội dung mà nó chứa thành kiểu chữ nghiêng.</p>
+                        <p><code>span</code> là một trong những thành phần nội dòng thường được sử dụng. Thành phần <code>span</code> dùng để định dạng nội dung nằm trong nó.</p>
+                        <p>Ví dụ:</p>
+                        <pre><code>
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;body>
+        Đây là một trang được viết bằng &lt;span style="color:blueviolet">HTML.&lt;/span>
+    &lt;/body>
+&lt;/html>
+                        </code></pre>
+                        <p>Chúng ta sẽ có kết quả:</p>
+                        <img src="img/BlockInline/Vidu3.png"><br><br><br><br>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- <a href="" class="truocsau">Trước</a>
+                <a href="" class="truocsau" id="sau">Sau</a> -->
+            </div>
+        </div>
+                </div>
+                <div class="col-3" id="dexuat">
+                    <u>Bài viết liên quan</u>
+                    <div>
+                        <a href="Themodelbox.html">
+                            <img src="./img/Card CSS Box Model.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="HTML Image.html">
+                            <img src="./img/Card HTML Image.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="HTML Table.html">
+                            <img src="./img/Card HTML Table.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

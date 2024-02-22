@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>HTML Image</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header">
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">HTML IMAGE</a>
+                <ul class="nav">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                
+            </div>
+            <div class="col-10" id="row2">
+                <div class="row">
+                    <div class="col-12" id="banner">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9" id="content">
+                        <h1>Chèn ảnh trong HTML bằng thẻ img</h1>
+
+                        <div class="row">
+                            <div class="col-1">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="col-1"style="padding-left: 25px;">
+                                <p class="css">CSS</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Heading 2 bắt đầu từ đây! -->
+                        <h2>Thẻ img trong HTML</h2>
+                        <p>Thẻ img trong html là thẻ sử dụng để chèn hình ảnh.</p>
+                        <p>Thẻ img không có thẻ đóng, và có hai thuộc tính thường được sử dụng là src và alt.</p>
+                        <p>Thẻ img là một thành phần nội dòng, nên nó có các tính chất của thành phần nội dòng.</p>
+                        <p>Để chèn ảnh chúng ta sử dụng cú pháp:</p>
+                        <pre><code>
+&lt;img src="Đường dẫn đến tập tin hình ảnh"></code>
+                    </pre>
+                        <p>Ví dụ, chúng ta có hình ảnh được chèn vào giữa đoạn văn bản:</p>
+                        <pre><code>
+&lt;p>Chủ động ứng phó với áp thấp nhiệt đới &lt;img src="HinhAnh/BaoNhietDoi.jpeg"> trên Biển Đông.&lt;/p></code>
+                    </pre>
+                        <p>Vì img là một thành phần nội dòng, hình ảnh sẽ được hiển thị như sau:</p>
+                        <pre>
+                        <p style="font-family: 'Times New Roman', Times, serif;">Chủ động ứng phó với áp thấp nhiệt đới <img src="img/Image/vidu1.jpeg" style="height: 5em; width: 6em;;"> trên Biển Đông.</p></pre>
+                        <h2>Thuộc tính src</h2>
+                        <p>Thuộc tính src dùng để khai báo đường dẫn file ảnh.</p>
+                        <p>Hình ảnh được sử dụng phải có định dạng GIF, JPEG hoặc PNG.</p>
+                        <p>Ví dụ, khi tập tin hình ảnh được đặt trong cùng thư mục với tập tin trang HTML, chúng ta sẽ
+                            khai báo như sau:</p>
+                        <pre><code>
+&lt;img src="Tên tập tin hình ảnh"></code>
+                    </pre>
+                        <p>Khi hình ảnh chúng ta cần chèn được đặt trong một thư mục con khác, nhưng thư mục con đó vẫn
+                            đặt trong cùng thư mục với trang HTML, chúng ta khai báo bằng cách sử dụng dấu gạch chéo
+                            <code>/</code> để truy cập vào thư mục con đó:</p>
+                        <pre><code>
+&lt;img src="Tên thư mục/Tên thư mục/.../Tên tập tin hình ảnh">
+                    </code></pre>
+                        <p>Giả sử trang HTML của chúng ta đặt trong thư mục con TepHTML, và chúng ta muốn chèn tập tin
+                            ảnh HinhAnh vào trang. Trong trường hợp đó, chúng ta cần một đặt dấu chấm <code>.</code> để
+                            thông báo cho trình duyệt ra ngoài một thư mục. Số dấu chấm bạn cần đặt sẽ phụ thuộc vào số
+                            lần bạn cần truy cập ra bên ngoài các thư mục.</p>
+                        <img src="img/Image/vidu2.png" style="width: 50%;">
+                        <pre><code>
+&lt;img src="./HinhAnh.jpeg"></code>
+                    </pre>
+                        <h2>Thuộc tính alt</h2>
+                        <p>Thuộc tính <code>alt</code> cung cấp một văn bản thay thế hình ảnh, trong trường hợp người
+                            dùng không thể nhìn thấy hình ảnh do đường truyền, lỗi khai báo, hoặc sử dụng trình đọc màn
+                            hình,...</p>
+                        <p>Cú pháp của thuộc tính <code>alt</code>:</p>
+                        <pre><code>
+&lt;img src="Đường dẫn đến tập tin hình ảnh" alt="Văn bản thay thế của bạn"></code>
+                    </pre><br><br><br><br>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <a href="" class="truocsau">Trước</a>
+                                <a href="" class="truocsau" id="sau">Sau</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" id="dexuat">
+                        <u>Bài viết liên quan</u>
+                        <div>
+                            <a href="HTML Block Inline.html">
+                                <img src="./img/Card HTML Block Inline.png.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="HTML Table.html">
+                                <img src="./img/Card HTML Table.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="Themodelbox.html">
+                                <img src="./img/Card CSS Box Model.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

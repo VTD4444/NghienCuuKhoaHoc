@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+    <style type="text/css">
+        td, th { border: 1px solid #CCC }
+        table {border: 1px solid black }
+    </style>
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+<style>
+    th,td {
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header" >
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">HTML TABLE</a>
+                <ul class="nav">
+                    <li ><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                    
+            </div>
+            <div class="col-10" id="row2">
+            <div class="row" >
+                <div class="col-12" id="banner">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9" id="content">
+                    <h1>Tìm hiểu về bảng (table) - Hướng dẫn xây dựng bảng cơ bản trong HTML</h1>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <p class="html">HTML</p>
+                        </div>
+                        <div class="col-1" style="padding-left: 25px;">
+                            <p class="css">CSS</p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Heading 2 bắt đầu từ đây! -->
+
+                    <h2>Giới thiệu về bảng trong HTML</h2>
+            <p>Bảng (Table) trong HTML được sử dụng trong trường hợp chúng ta cần thêm các tài liệu dạng bảng (dữ liệu sắp xếp theo hàng và cột) vào một trang web. Bảng có thể dùng để biểu diễn lịch, thời gian biểu, số liệu hoặc những kiểu thông tin khác. Một ô bảng có thể chứa nhiều loại thông tin, bao gồm số, chữ cái, ảnh hoặc những thành phần đa phương tiện khác.</p>
+            <h2>Cấu trúc HTML của một bảng cơ bản</h2>
+            <p>Để tìm hiểu về cấu trúc HTML của bảng, trước tiên chúng ta hãy cùng nhìn vào ví dụ sau:</p>
+            <table cellpadding="16">
+                <caption>Bảng ví dụ</caption>
+                <tr>
+                    <th>Menu item</th>
+                    <th>Calories</th>
+                    <th>Fat (g)</th>
+                </tr>
+                <tr>
+                    <td>Chicken noodle soup</td>
+                    <td>140</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Caesar salad</td>
+                    <td>400</td>
+                    <td>26</td>
+                </tr>
+            </table>
+            <img src="img/Table/cautruc.png" style="width: 800px;">
+            <p>Hình trên miêu tả cấu trúc của bảng menu. Ta có thể thấy bảng được tạo nên từ các hàng (row), các hàng được tạo nên từ các ô (cell). Hàng đầu tiên gồm 3 ô tiêu đề (header cell) và các hàng sau chứa các ô dữ liệu (data cell). Vậy làm thế nào mà chúng ta có thể tạo bảng bằng ngôn ngữ HTML? Hãy quan sát hình bên dưới.</p>
+            <img src="img/Table/cautruchtml.png" style="width: 800px;"">
+            <p>Hình trên cho chúng ta thấy các thành phần cấu tạo nên bảng (table), các hàng (tr - “table row”) và các ô bảng (th - “table header” và td - “table data”). Các cột của bảng được xác định bởi số lượng ô trong một hàng. Khi được viết bằng HTML, bảng 2.1 sẽ được viết như sau:</p>
+            <pre><code>
+&lt;table>
+    &lt;tr>
+        &lt;th>Menu item&lt;
+        &lt;th>Calories&lt;
+        &lt;th>Fat(g)&lt;
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Chicken noodle soup&lt;
+        &lt;td>140&lt;
+        &lt;td>2&lt;
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Caesar salad&lt;
+        &lt;td>400&lt;
+        &lt;td>26&lt;
+    &lt;/tr>
+&lt;/table></code>
+            </pre>
+            <p>Chúng ta có các lưu ý:</p>
+            <ul>
+                <li>Cặp thẻ table được sử dụng để đánh dấu điểm bắt đầu và kết thúc của bảng.</li>
+                <li>Thành phần table có thể chứa các thành phần tr (hàng) và một vài thành phần cụ thể khác như caption, thead, tbody (tuy nhiên chúng ta chỉ đang tìm hiểu ở mức độ cơ bản).</li>
+                <li>Thành phần duy nhất mà tr có thể chứa là các cặp thẻ td hoặc th.</li>
+                <li>Mọi dữ liệu của bảng cần được đặt trong thẻ td hoặc th.</li>
+                <li>Bảng là một thành phần khối (block-level element), nên sẽ luôn bắt đầu ở dòng kế tiếp.</li>
+            </ul>
+
+            <!-- Luyện tập -->
+            <h1>Thực hành tạo một bảng dữ liệu đơn giản</h1>
+
+            <h2>Bước 1: Xác định số lượng hàng</h2>
+            <p>Hãy xác định số lượng hàng cần dùng cho bảng trước tiên, và đặt vào <code>table</code> số cặp thẻ tr tương ứng. Nếu bạn cần 5 hàng, hãy set up bảng của mình như sau:</p>
+            <pre><code>
+&lt;table>
+    &lt;tr>&lt;/tr>
+    &lt;tr>&lt;/tr>
+    &lt;tr>&lt;/tr>
+    &lt;tr>&lt;/tr>
+    &lt;tr>&lt;/tr>
+&lt;/table></code>
+    </pre>
+
+            <h2>Bước 2: Xác định số lượng cột</h2>
+            <p>Tiếp đến hãy xác định số lượng cột và đặt vào trong các cặp thẻ tr số cặp thẻ th hoặc td tương ứng. Hãy sử dụng th cho những ô tiêu đề của bảng ở hàng đầu tiên.</p>
+            <pre><code>
+&lt;table>
+    &lt;tr>
+        &lt;th>&lt;/th>
+        &lt;th>&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>&lt;/td>
+        &lt;td>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>&lt;/td>
+        &lt;td>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>&lt;/td>
+        &lt;td>&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>&lt;/td>
+        &lt;td>&lt;/td>
+    &lt;/tr>
+&lt;/table></code>
+                    </pre>
+
+        
+            <h2>Bước 3: Điền thông tin vào các cặp thẻ th và td</h2>
+            <p>Điền dữ liệu của bạn vào các thành phần ô bảng th và td, chúng sẽ hiển thị trên trình duyệt từ trái sang phải theo từng hàng, tương ứng với chiều từ trên xuống của các thẻ trong tài liệu HTML của bạn.</p>
+            <pre><code>
+&lt;table>
+    &lt;tr>
+        &lt;th>Hoa quả&lt;/th>
+        &lt;th>Gram&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Táo&lt;/td>
+        &lt;td>500&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Cam&lt;/td>
+        &lt;td>250&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Xoài&lt;/td>
+        &lt;td>600&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Dâu tây&lt;/td>
+        &lt;td>250&lt;/td>
+    &lt;/tr>
+&lt;/table></code>
+                                    </pre>
+            <p>Chúng ta sẽ có bảng như sau:</p>
+            <table>
+                <tr>
+                    <th>Hoa quả</th>
+                    <th>Gram</th>
+                </tr>
+                <tr>
+                    <td>Táo</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Cam</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Xoài</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>Dâu tây</td>
+                    <td>250</td>
+                </tr>
+            </table><br><br><br><br>
+
+        <div class="row">
+            <div class="col-12" style="margin-top: 32px;">
+                <!-- <a href="" class="truocsau">Trước</a>
+                <a href="" class="truocsau" id="sau">Sau</a> -->
+            </div>
+        </div>
+                </div>
+                <div class="col-3" id="dexuat">
+                    <u>Bài viết liên quan</u>
+                    <div>
+                        <a href="Themodelbox.html">
+                            <img src="./img/Card CSS Box Model.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="htmllist.html">
+                            <img src="./img/Card HTML List.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="HTML Block Inline.html">
+                            <img src="./img/Card HTML Block Inline.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

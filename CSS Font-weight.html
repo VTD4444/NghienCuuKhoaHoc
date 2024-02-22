@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>CSS Font-weight</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header" >
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">CSS FONT-WEIGHT</a>
+                <ul class="nav">
+                    <li ><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                    
+            </div>
+            <div class="col-10" id="row2">
+            <div class="row" >
+                <div class="col-12" id="banner">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9" id="content">
+                    <h1>Giới thiệu về HTML Weight</h1>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <p class="html">HTML</p>
+                        </div>
+                        <div class="col-1" style="padding-left: 25px;">
+                            <p class="css">CSS</p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Heading 2 bắt đầu từ đây! -->
+                    <p>Thuộc tính này được sử dụng khi chúng ta cần điều chỉnh độ dày mỏng cho chữ.</p>
+                    
+                    <p>Các giá trị của fontweight bao gồm các từ miêu tả cụ thể: <code>normal | bold | bolder | lighter</code>, và các giá trị cụ thể: <code>100 | 200 | 300 | 400 | 500| 600 | 700 | 800 | 900</code></p>
+
+                    <p>Ví dụ:</p>
+<pre><code>
+&lt;p style="font-weight:normal ;">Đây là dòng chữ có độ dày mỏng là normal</p>
+&lt;p style="font-weight: bolder;">Đây là dòng chữ có độ dày mỏng là bolder</p>
+&lt;p style="font-weight: lighter;">Đây là dòng chữ có độ dày mỏng là lighter</p>
+&lt;p style="font-weight: 100;">Đây là dòng chữ có độ dày mỏng là 100</p>
+&lt;p style="font-weight: 600;">Đây là dòng chữ có độ dày mỏng là 600</p>
+&lt;p style="font-weight: 900;">Đây là dòng chữ có độ dày mỏng là 900</p></code>
+</pre>
+                    <p>Ta sẽ có các kết quả sau:</p>
+                    <!-- <p style="font-weight: ;">Đây là dòng chữ có độ dày mỏng là </p> -->
+        
+                    <pre>
+<p style="font-weight:normal ;">Đây là dòng chữ có độ dày mỏng là normal</p>
+<p style="font-weight: bolder;">Đây là dòng chữ có độ dày mỏng là bolder</p>
+<p style="font-weight: lighter;">Đây là dòng chữ có độ dày mỏng là lighter</p>
+<p style="font-weight: 100;">Đây là dòng chữ có độ dày mỏng là 100</p>
+<p style="font-weight: 600;">Đây là dòng chữ có độ dày mỏng là 600</p>
+<p style="font-weight: 900;">Đây là dòng chữ có độ dày mỏng là 900</p>
+</pre><br><br><br><br>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- <a href="" class="truocsau">Trước</a>
+                <a href="" class="truocsau" id="sau">Sau</a> -->
+            </div>
+        </div>
+                </div>
+                <div class="col-3" id="dexuat">
+                    <u>Bài viết liên quan</u>
+                    <div>
+                        <a href="htmltext.html">
+                            <img src="./img/Card HTML Text.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="CSS Font-family.html">
+                            <img src="./img/Card CSS Font Family.png">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="CSS Font-size.html">
+                            <img src="./img/Card CSS Font Size.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>CSS Font-family</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+</head>
+
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header">
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">CSS FONT-FAMILY</a>
+                <ul class="nav">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                <!-- <div id="slidebar"></div>
+                <div id="#"></div> -->
+            </div>
+            <div class="col-10" id="row2">
+                <div class="row">
+                    <div class="col-12" id="banner">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9" id="content">
+                        <h1>Thuộc tính font-family</h1>
+
+                        <div class="row">
+                            <div class="col-1">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="col-1" style="padding-left: 25px;">
+                                <p class="css">CSS</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Heading 2 bắt đầu từ đây! -->
+                        <p>Để lựa chọn typeface cho chữ, văn bản bằng CSS, chúng ta sử dụng thuộc tính font-family.</p>
+
+                        <p>Ví dụ:</p>
+                        <pre><code>
+body { font-family: Arial; }
+tt { font-family: Courier, monospace; }
+p { font-family: "Trebuchet MS", Verdana, sans-serif; }</code>
+                        </pre>
+                        <p>Ngoài 5 loại generic font family: serif, sans-serif, monospace, cursive, fantasy - mọi tên
+                            font khác cần được viết hoa. Ví dụ như “Arial” thay vì “arial”.</p>
+                        <p>Những tên font có chứa dấu cách như Trebuchet MS trong ví dụ trên, chúng ta cần thêm dấu
+                            ngoặc kép bên ngoài.</p>
+                        <p>Nếu có nhiều hơn một tên font, giữa các tên font được ngăn cách bởi dấu phẩy.</p>
+                        </ul>
+                        <p>Bạn có thể xem thêm về <a href="https://www.w3schools.com/css/css_font.asp">5 loại generic
+                                font family</a> tại trang web W3School.</p>
+                        <h2>Vì sao chúng ta lại sử dụng nhiều hơn một font ?</h2>
+                        <p>Các trình duyệt không thể hiển thị các kiểu font mà người dùng chưa cài đặt trong máy tính.
+                            Khi kiểu font mà chúng ta sử dụng không được cài đặt trên thiết bị của người dùng, kiểu font
+                            mặc định của trình duyệt sẽ được hiển thị thay thế.</p>
+                        <h2>Chúng ta nên lựa chọn font như thế nào?</h2>
+                        <p>Hãy bắt đầu với lựa chọn của bạn, sau đó thêm vào những kiểu tương tự để thay thế, và kết
+                            thúc với một generic font family.
+                            <br><br>
+                            Ví dụ:
+                        </p>
+                        <pre><code>
+body { font-family: Verdana, Arial, Helvetica, sans-serif; }</code>
+                    </pre>
+                        <p>Ngoài ra, trình duyệt Google hỗ trợ người dùng với hơn 1000 font miễn phí, hiển thị trực tiếp
+                            trên trình duyệt mà không cần người xem cài đặt trong máy tính.<br><br>Xem thêm về cách cài
+                            đặt <a href="https://www.w3schools.com/css/css_font_google.asp">CSS Google Font</a> tại
+                            trang web W3School.</p><br><br><br><br>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <a href="" class="truocsau">Trước</a>
+                                <a href="" class="truocsau" id="sau">Sau</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" id="dexuat">
+                        <u>Bài viết liên quan</u>
+                        <div>
+                            <a href="htmltext.html">
+                                <img src="./img/Card HTML Text.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="CSS Font-weight.html">
+                                <img src="./img/Card CSS Font Weight.png.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="CSS Font-size.html">
+                                <img src="./img/Card CSS Font Size.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <h2>MULTIMEDIA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+            </div>
+            <div class="information">
+                <h4>Navigation</h4>
+                <p><a href="">Home</a></p>
+                <p><a href="">About us</a></p>
+                <p><a href="">Service</a></p>
+                <p><a href="">Feature</a></p>
+            </div>
+            <div class="information">
+                <h4>Address</h4>
+                <p>@gmail.com</p>
+                <p>@gmail.com</p>
+                <p>@gmail.com</p>
+            </div>
+            <div class="information">
+                <h4>Social</h4>
+                <p><a href="">Facebook</a></p>
+                <p><a href="">Instagram</a></p>
+                <p><a href="">Tweeter</a></p>
+                <p><a href="">Tiktok</a></p>
+            </div>
+        </div>
+
+</body>
+
+</html>

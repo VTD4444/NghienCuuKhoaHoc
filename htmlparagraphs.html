@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS_Bs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>HTML Paragraphs</title>
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header">
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">HTML PARAGRAPH</a>
+                <ul class="nav">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                <!-- <div id="slidebar"></div>
+                <div id="#"></div> -->
+            </div>
+            <div class="col-10" id="row2">
+                <div class="row">
+                    <div class="col-12" id="banner">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9" id="content">
+                        <h1>Một vài thẻ HTML dùng cho văn bản</h1>
+
+                        <div class="row">
+                            <div class="col-1">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="col-1" style="padding-left: 25px;">
+                                <p class="css">CSS</p>
+                            </div>
+
+                        </div>
+
+                        <h2>Thẻ xuống dòng &lt;br></h2>
+                        <p>Thẻ <code>br</code> có tác dụng đánh dấu ngắt đoạn văn bản, xuống dòng trong HTML</p>
+                        <h3>Ví dụ</h3>
+                        <pre><code>&lt;!DOCTYPE htlm>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>HTML, CSS&lt;/title>
+&lt;/head>
+&lt;body>
+    Văn bản dòng 1.&lt;br>Văn bản dòng 2.
+&lt;/body>
+&lt;/html></code></pre>
+                        <h3>Kết quả</h3>
+                        <img src="./img/kqthebr.png">
+                        <br><br>
+                        <h2>Thẻ gạch phần tử &lt;del></h2>
+                        <p>Thẻ <code>del</code> xác định phần văn bản bị gạch ngang</p>
+                        <h3>Ví dụ</h3>
+                        <pre><code>&lt;!DOCTYPE htlm>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>HTML, CSS&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;del>Phần này sẽ bị gạch&lt/del>, còn phần này thì không.
+&lt;/body>
+&lt;/html></code></pre>
+                        <h3>Kết quả</h3>
+                        <img src="./img/kqthedel.png">
+                        <br><br>
+                        <h2>Thẻ in đậm &lt;b> và &lt;strong></h2>
+                        <p>Thẻ <code>b</code> xác định phần văn bản in đậm</p>
+                        <h3>Ví dụ</h3>
+                        <pre><code>&lt;!DOCTYPE htlm>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>HTML, CSS&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;b>Phần này sẽ được in đậm&lt;/b>, còn phần này thì không.
+&lt;/body>
+&lt;/html></code></pre>
+                        <h3>Kết quả</h3>
+                        <img src="./img/kqtheb.png">
+                        <h2>Một số thẻ thông dụng khác</h2>
+                        <ul>
+                            <li>Thẻ <code>u</code> và thẻ <code>ins</code> để định dạng văn bản gạch chân</li>
+                            <li>Thẻ <code>i</code> và thẻ <code>em</code> để định dạng văn bản in nghiêng</li>
+                        </ul>
+                        <br><br><br><br>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <a href="" class="truocsau">Trước</a>
+                                <a href="" class="truocsau" id="sau">Sau</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" id="dexuat">
+                        <u>Bài viết liên quan</u>
+                        <div>
+                            <a href="htmltext.html">
+                                <img src="./img/Card HTML Text.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="HTML Links.html">
+                                <img src="./img/Card HTML Links.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="CSS Font-size.html">
+                                <img src="./img/Card CSS Font Size.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

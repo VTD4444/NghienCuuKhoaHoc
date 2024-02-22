@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Tìm hiểu về Box Model</title>
+    <link rel="stylesheet" href="CSS_Bs.css">
+    <style type="text/css">
+        td,
+        th {
+            border: 1px solid #CCC
+        }
+
+        table {
+            border: 1px solid black
+        }
+    </style>
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header">
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">CSS MODEL BOX</a>
+                <ul class="nav">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                
+            </div>
+            <div class="col-10" id="row2">
+                <div class="row">
+                    <div class="col-12" id="banner">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9" id="content">
+                        <h1>Tìm hiểu về CSS: The Model Box</h1>
+
+                        <div class="row">
+                            <div class="col-1">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="col-1" style="padding-left: 25px;">
+                                <p class="css">CSS</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Heading 2 bắt đầu từ đây! -->
+
+                        <p>Là một hộp bao quanh mọi phần tử HTML. Nó bảo gồm content, padding, border, margin.</p>
+                        <img style="width: 500px; margin-left: 10%;" src="./img/Untitled-1.png">
+                        <p><b>Content</b>:là khu vực chứa nội dung biểu thị bằng văn bản và hình ảnh trong hộp</p>
+                        <p><b>Padding</b>:Là khu vực nằm giữ content và border(Trong suốt)</p>
+                        <p><b>Border</b>: Là một đường viền bao quanh content và padding(Hiển thị)</p>
+                        <p><b>Margin</b>: là khoảng không ngoài border (Trong suốt)</p>
+
+                        <p>Dưới đây là 2 ví dụ minh hoạ cho sự khác biệt trước và sau khi thêm các yếu tố box model</p>
+                        <p>Trước:</p>
+                        <pre><code>&lt;body>
+    &lt;p>---------------------------------------------------------------------------&lt;/p>
+    &lt;Div style="background-color: rgba(148, 212, 255, 0.6);width: 400px;">
+    Đây là nội dung trước khi thêm padding, border, margin &lt;/Div>
+&lt;/body> 
+</code></pre>
+                        <p>Kết quả:</p>
+                        <img src="./img/Trước khi thêm box model.jpg">
+                        <p>Sau:</p>
+                        <pre><code>&lt;body>
+    &lt;p>---------------------------------------------------------------------------&lt;/p>
+    &lt;Div style="background-color: rgba(148, 212, 255, 0.6);width: 400px;
+    border: 15px solid #29577D; padding:30px; margin:20px;">
+    Đây là nội dung sau khi thêm padding, border, margin &lt;/Div>
+&lt;/body> 
+</code></pre>
+
+                        <p>Kết quả:</p>
+                        <img src="./img/Sau khi thêm box mocdel.jpg">
+                        <p>Có thể thấy việc thêm border cho hộp sẽ xuất hiện viền bao quanh tương ứng với kích thước của
+                            border, padding được thêm vào sẽ làm tăng kích thước khu vực phía trong border, margin sẽ
+                            làm tăng khoảng cách với các yếu tố bên ngoài.</p>
+                        <div class="row">
+                            <div class="col-12" style="margin-top: 32px;">
+                                <!-- <a href="" class="truocsau">Trước</a>
+                                <a href="" class="truocsau" id="sau">Sau</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" id="dexuat">
+                        <u>Bài viết liên quan</u>
+                        <div>
+                            <a href="HTML Image.html">
+                                <img src="./img/Card HTML Image.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="HTML Block Inline.html">
+                                <img src="./img/Card HTML Block Inline.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="htmllist.html">
+                                <img src="./img/Card HTML List.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

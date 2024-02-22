@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/m1logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS_Bs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>HTML Text</title>
+</head>
+<script>
+    $(function () {
+        $("#slidebar").load("slidebar.html");
+    });
+</script>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="header">
+                <img class="logo" src="./img/m2logo.png">
+                <a href="" style="padding: 0px; font-weight: 500;">HTML TEXT</a>
+                <ul class="nav">
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="HTML.html">HTML</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="slidebar">
+                <!-- <div id="menu"></div>
+                <div id="#"></div> -->
+            </div>
+            <div class="col-10" id="row2">
+                <div class="row">
+                    <div class="col-12" id="banner">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9" id="content">
+                        <h1>Giới thiệu về HTML Text</h1>
+                        <div class="row">
+                            <div class="col-1">
+                                <p class="html">HTML</p>
+                            </div>
+                            <div class="col-1" style="padding-left: 25px;">
+                                <p class="css">CSS</p>
+                            </div>
+                        </div>
+                        <h2>Thẻ Heading</h2>
+                        <h3></h3>
+                        <p>Là thẻ tiêu đề, cỡ chữ được điều chỉnh nhỏ dần từ <code>h1</code> đến <code>h6</code>.</p>
+                        <h3>Ví dụ</h3>
+                        <pre><code>&lt;!DOCTYPE htlm>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>HTML Text&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Tiêu đề&lt;h1>;
+    &lt;h2>Tiêu đề&lt;h2>;
+    &lt;h3>Tiêu đề&lt;h3>;
+    &lt;h4>Tiêu đề&lt;h4>;
+    &lt;h5>Tiêu đề&lt;h5>;
+    &lt;h6>Tiêu đề&lt;h6>;
+&lt;/body>
+&lt;/html></code></pre>
+                        <h3>Kết quả</h3>
+                        <img src="./img/kqtheh.png"><br><br>
+                        <h2>Thẻ &lt;p></h2>
+                        <p>Là thẻ để xác định văn bản<br>Một đoạn văn luôn bắt đầu trên một dòng mới và trình duyệt sẽ
+                            tự động thêm một số khoảng trắng (lề) trước và sau một đoạn văn.</p>
+                        <h3>Ví dụ</h3>
+                        <pre><code>&lt;!DOCTYPE htlm>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>Giới thiệu về HTML&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;p>Văn bản&lt;/p>
+&lt;/body>
+&lt;/html</code></pre>
+                        <h3>Kết quả</h3>
+                        <img src="./img/kqthep.png">
+                        <div class="row">
+                            <div class="col-12">
+                                <br><br><br><br>
+                                <!-- <a href="" class="truocsau">Trước</a>
+                                <a href="" class="truocsau" id="sau">Sau</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3" id="dexuat">
+                        <u>Bài viết liên quan</u>
+                        <div>
+                            <a href="htmlparagraphs.html">
+                                <img src="./img/Card HTML Paragraphs.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="text-decoration.html">
+                                <img src="./img/Card CSS Text Decoration.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="CSS Font-size.html">
+                                <img src="./img/Card CSS Font Size.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>MULTIMEDIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        </div>
+        <div class="information">
+            <h4>Navigation</h4>
+            <p><a href="">Home</a></p>
+            <p><a href="">About us</a></p>
+            <p><a href="">Service</a></p>
+            <p><a href="">Feature</a></p>
+        </div>
+        <div class="information">
+            <h4>Address</h4>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+            <p>@gmail.com</p>
+        </div>
+        <div class="information">
+            <h4>Social</h4>
+            <p><a href="">Facebook</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Tweeter</a></p>
+            <p><a href="">Tiktok</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
